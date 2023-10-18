@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  python-dev:
+    image: runqukunf/python-dev
+    container_name: python-dev
+    volumes:
+      - ./python_dev:/python_dev
+    networks:
+      - dev-network
+
+networks:
+  dev-network:

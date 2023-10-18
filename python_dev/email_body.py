@@ -45,9 +45,9 @@ class Line:
         return
 
     def html_pop(self, text=None):
-        if text: self.line_body += text
         pop_text = self.html_stack.pop()
         self.line_body += pop_text
+        if text: self.line_body += text
         return
 
 if __name__ == "__main__":
